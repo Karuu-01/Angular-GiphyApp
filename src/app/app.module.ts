@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GiphyTitleComponent } from './giphy-title/giphy-title.component';
+import { SearchDetailComponent } from './search-detail/search-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GiphyTitleComponent
+    GiphyTitleComponent,
+    SearchDetailComponent
   ],
   imports: [
     BrowserModule,
