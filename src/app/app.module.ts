@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GiphyTitleComponent } from './giphy-title/giphy-title.component';
 import { SearchDetailComponent } from './search-detail/search-detail.component';
+import { GifsComponent } from './gifs/gifs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GiphyTitleComponent,
     SearchDetailComponent,
+    GifsComponent,
     
   ],
   imports: [
