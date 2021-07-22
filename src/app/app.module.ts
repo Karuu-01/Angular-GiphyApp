@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { GiphyTitleComponent } from './giphy-title/giphy-title.component';
 import { SearchDetailComponent } from './search-detail/search-detail.component';
 import { GifsComponent } from './gifs/gifs.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { GifsComponent } from './gifs/gifs.component';
     GiphyTitleComponent,
     SearchDetailComponent,
     GifsComponent,
+    NavbarComponent,
     
   ],
   imports: [
