@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { gi }
 
 @Component({
   selector: 'app-search-detail',
@@ -12,4 +13,7 @@ export class SearchDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  search(){
+
+  }
 }

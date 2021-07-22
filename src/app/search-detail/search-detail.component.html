@@ -1,4 +1,4 @@
 <div class="search">
   <h2>Search for GIFs</h2>
-  <input type="text" placeholder="Search for GIFs">
+  <input type="text" placeholder="Search for GIFs" #gif (keyup.enter)="search(gif.value)">
 </div>
