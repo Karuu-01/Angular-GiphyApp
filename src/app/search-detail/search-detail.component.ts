@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { gi }
+import { GisyService } from '../gisy.service';
 
 @Component({
   selector: 'app-search-detail',
@@ -8,12 +8,16 @@ import { gi }
 })
 export class SearchDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gisyService: GisyService) { }
 
   ngOnInit(): void {
   }
 
-  search(){
+  search(searchTerm: string){
+    if(searchTerm !== '') {
+      this.gisyService.searchGifs(searchTerm)
+    }
+  }
+  
 
   }
-}
