@@ -1,14 +1,21 @@
 <nav class="navbar navbar-inverse navbar-fixed-top"> 
   <div class="container"> 
       <div class="navbar-header"> 
-          <a class="navbar-brand" [routerLink]="['/']">Giphy App</a> 
+          <a class="navbar-brand" [routerLink]="['/']">GIPHY</a> 
       </div> 
       <div id="navbar" class="collapse navbar-collapse"> 
           <ul class="nav navbar-nav"> 
               <li [routerLinkActive]="['active']"><a [routerLink]="
-                ['/trending']">Trending</a></li> 
+                ['/trending']">Reactions</a></li> 
               <li [routerLinkActive]="['active']"><a [routerLink]="
-                ['/search']">Search</a></li> 
+                ['/search']">Entertainment</a></li> 
+                <li [routerLinkActive]="['active']"><a [routerLink]="
+                  ['/search']">Sports</a></li> 
+                  <li [routerLinkActive]="['active']"><a [routerLink]="
+                    ['/search']">Stickers</a></li> 
+                    <li [routerLinkActive]="['active']"><a [routerLink]="
+                      ['/search']">Artists</a></li> 
+                
           </ul> 
       </div> 
   </div> 

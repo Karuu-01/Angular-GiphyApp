@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { BehaviorSubject} from 'rxjs';
+import { BehaviorSubject, Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +11,13 @@ export class GisyService {
 
   constructor(private http: HttpClient) { }
 
+  getRandomGif(){
+    return this.http.get(`https://api.giphy.com/v1/gifs/random?api_key=dG1BxqPXJwicd5aI77gkbsAiRnLrhqBK&tag=&rating=g`)
+    .subscribe((response: any) => {
+      this.gifs.next(response.data);
+    })
+  }
+    
   getTrendingGifs() {
     return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=dG1BxqPXJwicd5aI77gkbsAiRnLrhqBK&limit=50&rating=g`)
     .subscribe((response: any) => {

@@ -1,3 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-@import "https://bootswatch.com/cosmo/bootstrap.min.css"
+@import "https://bootswatch.com/cosmo/bootstrap.min.css";
 
+*{
+  background-color: #121212;
+}
+body {
+  padding-top: 50px; 
+  padding-bottom: 20px; 
+} 
+
+.starter-template { 
+  padding: 40px 15px; 
+  text-align: center; 
+}
